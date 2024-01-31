@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translation and Transliteration</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+    <h1>Translation and Transliteration</h1>
+    <form action="/translate" method="post">
+        <label for="word">Enter the word to translate:</label>
+        <input type="text" name="word" id="word" required>
+        <br>
+        <label for="target_language">Select the target language:</label>
+        <select name="target_language" id="target_language">
+            {% for code, language in languages.items() %}
+            <option value="{{ code }}">{{ language }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <button type="submit">Translate</button>
+    </form>
+    </div>
+</body>
+</html>

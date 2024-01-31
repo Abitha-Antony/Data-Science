@@ -1,0 +1,71 @@
+
+/* Styles for the body and heading */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("/static/image/translator2 image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+  .container {
+    max-width: 500px;
+    margin-top: 0px;
+    margin-left: -850px; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 9px hwb(180 24% 73% / 0.918);
+  }
+  
+  h1 {
+    text-align: left;
+  }
+  
+  /* Styles for the form */
+  form {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  select {
+    padding: 8px;
+    font-size: 16px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #18809a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Styles for the result */
+  .result {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .result p {
+    margin-bottom: 5px;
+  }
+  

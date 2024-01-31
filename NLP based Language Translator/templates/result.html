@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translation and Transliteration Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+    <h1>Translation and Transliteration Result</h1>
+    <p>Word: {{ word }}</p>
+    <p>Target Language: {{ target_language }}</p>
+    <p>Translation: {{ translation }}</p>
+    <p>Transliteration: {{ transliteration }}</p>
+    </div>
+</body>
+</html>
